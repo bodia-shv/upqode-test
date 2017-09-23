@@ -1,0 +1,859 @@
+// =======================================================================
+// Home page related styles
+// =======================================================================
+
+@import "home/about_us";
+
+$darkgrey : #232323;
+
+$blue : #009dda;
+$purple : #503392;
+$yellow : #fff200;
+$grey : #999999;
+$lightgrey : #ebebeb;
+
+a{
+	text-decoration: none;
+}
+
+li {
+	list-style-type: none;	
+}
+
+body{
+	width: 1600px;
+	margin: 0;
+}
+
+.header-section{
+	width: 100%;
+	height: 70px;
+	padding: 0 230px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	position: fixed;
+	background:#fff;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 100;
+
+	.header-section__logo{
+
+
+		.header-section__logo_link{
+			font: 30px/20px 'Beyno';
+			color: $blue;
+
+			.logo_color{
+				color: $purple;
+			}
+		}
+	}
+
+	.header-section__nav{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		align-content: center;
+
+		.header-section__nav_menu{
+			width: 100%;
+			display: flex;
+			margin: 0px;
+			padding: 0px;
+			align-items: center;
+
+			.header-section__nav_menu_item{
+				margin: 0  0 0 60px;
+			
+				.header-section__nav_menu_item_link{
+					font: 16px/24px 'Lato-Regular';
+					letter-spacing: 1px;
+					color: $darkgrey;
+				}
+
+
+				.submenu{
+					display: none;
+
+
+					.submenu__item{
+
+
+						.submenu__item_link{
+							font: 16px/24px 'Lato-Regular';
+						}
+
+						.sub-submenu{
+
+
+							.sub-submenu__item{
+
+
+								.sub-submenu__item_link{
+									font: 16px/24px 'Lato-Regular';
+
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		.header-section__form{
+			display: flex;
+			align-self: center;
+			margin: 0 0 0 45px;
+
+			.header-section__form_search{
+				width: 180px;
+				height: 30px;
+				border: none;
+				background: #e8e4f1 url('search.png') no-repeat;
+				background-position: center right;
+
+			}
+		}
+	}
+
+	.header-section__burger-btn{
+		display: none;
+	}
+}
+.banner{
+	display: flex;
+	width: 100%;
+	min-height: 860px;
+	padding: 20px 230px 0;
+	justify-content: center;
+	align-items: center;
+	background: #eb01a5;/* fallback */
+    background-image: linear-gradient(to right, #eb01a5, #d13531);
+
+	.banner__slider{
+
+	}
+
+	.banner__content{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
+
+
+		.banner__content_title{
+			font: 64px 'Lato-Bold';
+			color: $yellow;
+			margin: 0 0 20px 0;
+
+			.banner_color{
+				color: #fff;
+			}
+		}
+
+		.banner__content_text{
+			width: 720px;
+			text-align: center;
+			letter-spacing: 1.4px;
+			margin: 0;
+
+			font: 16px/30px 'Lato-Regular';
+			color: #fff;
+		}
+	}
+}
+
+
+.choose-us{
+	display: flex;
+	width: 100%;
+	min-height: 690px;
+	padding: 120px 230px;
+	box-sizing: border-box;
+	justify-content: space-between;
+	flex-direction: column;
+
+	.choose-us__top{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		.choose-us__top_title{
+		font: 35px/24px 'Lato-Bold';
+		color: $blue;
+
+			.choose_color{
+				color: $darkgrey;
+			}
+		}
+		.choose-us__top_text{
+		width: 660px;
+		font: 14px/24px 'Lato-Regular';
+		color: $grey;
+		text-align: center;
+		}
+
+	}
+
+
+	.choose-us__content{
+		display: flex;
+		justify-content: space-between;
+
+		.choose-us__content_item{
+			width: 200px;
+			min-height: 270px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			border: 1px solid $lightgrey;
+			box-sizing: border-box;
+			position: relative;
+			text-align: center;
+			padding: 30px 25px;
+
+
+			.choose-us__content_item_img{
+				width: 65px;
+				height: 55px;
+				background: #888;
+				display: flex;
+				align-self: center;
+			}
+
+			.choose-us__content_item_title{
+				font: 16px/50px 'Lato-Heavy';
+				color: $darkgrey;
+				margin: 30px 0 0 ;
+			}
+
+			.choose-us__content_item_text{
+				font: 14px/20px 'Lato-Light';
+				color: #373737;
+				margin: 0 ;
+			}
+
+			.choose-us__hover{
+				display: flex;
+				justify-content: center;
+				flex-wrap: wrap;
+				width: 100%;
+				height: 150px;
+				background: $purple;
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				right: 0;
+
+			
+
+				.choose-us__hover_title{
+					font: 14px/80px 'Lato-Semibold';
+					color: #fff;
+					width: 100%;
+					margin: 0px;
+				}
+
+				.choose-us__hover_wrap{
+					display: flex;
+					width: 85px;
+					padding:  0 0 35px;
+					justify-content: space-between;
+
+					.choose-us__hover_wrap_item{
+						width: 35px;
+						height: 35px;
+						border: 1px solid #fff;
+						border-radius: 50%;
+
+						&:hover{
+							border-color: $purple;
+							background: #fff;
+						}
+
+					}
+				}
+			}
+		}
+
+	}
+
+}
+
+
+.product{
+	display: flex;
+	width: 100%;
+	min-height: 840px;
+	background: #898989;
+	flex-direction: column;
+
+
+	.product__top{
+		display: flex;
+		width: 100%;
+		min-height: 120px;
+		align-self: center;
+		align-items: center;
+		justify-content: center;
+
+
+
+		.product__top_title{
+			font: 35px/24px 'Lato-Bold';
+			color: #fff;
+			padding: 20px 0;
+			margin: 0;
+
+
+		}
+
+		.product_color{
+			color: $yellow;
+		}
+	}
+
+
+	.product__container{
+	display: flex;
+	min-height: 720px;
+	padding: 0 230px;
+	background: #989898;
+
+		.product__container_content{
+			display: flex;
+			justify-content: center;
+			/*align-content: center;*/
+			width: 100%;
+			
+			flex-wrap: wrap;
+
+
+			.product__container_content_item{
+				/*padding: 40px 0;*/
+				display: flex;
+				width: 33.33%;
+				/*margin-bottom: 80px;*/
+				justify-content: space-between;
+
+					
+				.product__container-img{
+					display: flex;
+					align-items: center;
+
+
+
+
+					.product__container-img_wrap{
+						width: 150px;
+						height: 150px;
+						border-radius: 50%;
+						background: #898;
+
+						.product__container-img_wrap_img{
+
+
+						}
+					}
+				}
+				
+				.product__wrap-title{
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+					padding-left: 20px;
+
+					.product__wrap-title_title{
+						font: 24px/96.96px 'Lato-Heavy';
+						color: $darkgrey;
+
+					}
+
+					.product__wrap-title_subtitle{
+						font: 16px/24.21px 'Lato-Regular';
+						color: $purple;
+
+					}
+					
+					.product__wrap-title_text{
+						font: 14px/24.21px 'Lato-Light';
+						color: #373737;
+
+
+					}
+				}
+			}
+		}
+	}
+}
+
+
+
+
+
+
+.about{
+	display: flex;
+	width: 100%;
+	padding: 120px 230px 0;
+	justify-content: center;
+
+
+	.about__skills{
+		width: 50%;
+		display: flex;
+		padding-right: 20px;
+		flex-direction: column;
+
+
+		
+		.about__skills_title{
+			font: 35px/24px 'Lato-Bold';
+			color: $darkgrey;
+			margin-bottom: 30px;
+			
+			.about_color{
+				color: $blue; 
+			}
+		}
+		
+		.about__skills_subtitle{
+			font: 14px/24px 'Lato-Regular';
+			color: $grey;
+			margin-bottom: 50px;
+			letter-spacing: 1px;
+		}
+
+		.about__skills_text{
+			font: 14px/24px 'Lato-Regular';
+			color: #373737;
+			letter-spacing: 0.9px;
+			margin-bottom: 30px;
+		}
+
+		.container-skills{
+			display: flex;
+			width: 100%;
+			flex-direction: column;
+
+			.container-skills__title{
+				display: flex;
+				justify-content: space-between;
+
+				.container-skills__title_name{
+					font: 13px/70px 'Lato-Bold';
+					color: #444;
+
+				}
+
+				.container-skills__title_percent{
+					font: 13px/70px 'Lato-Bold';
+					color: #444;
+
+				}
+
+			}
+
+			.container-skills__level{
+				display: flex;
+				width: 100%;
+				padding: 3px;
+				border: 1px solid $lightgrey;
+
+				.container-skills__level_line{
+					height: 3px;
+					background-color: $blue;
+				}
+
+				.photoshop__line{
+					width: 79%;
+				}
+				.html-css__line{
+					width: 90%;
+				}
+				.javascript__line{
+					width: 69%;
+				}
+				.wordpress__line{
+					width: 92%;
+				}
+			}
+		}
+	}
+
+	.about__bg-img{
+		width: 50%;
+		display: flex;
+	}
+}
+
+
+.footer-section{
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+	
+
+	.footer-section__top{
+		display: flex;
+		width: 100%;
+		padding: 200px 230px 65px;
+		text-align: center;
+		flex-direction: column;
+		align-items: center;
+
+		.footer-section__top_title{
+			font: 35px/20px 'Lato-Bold';
+			color: $darkgrey;
+			margin-bottom: 25px;
+
+			.footer-section_color{
+				color: $blue;
+			}
+		}
+
+		.footer-section__top_text{
+			font: 14px/24px $grey;
+			width: 660px;
+		}
+	}
+
+
+	.footer-section__contact{
+		display: flex;
+		width: 100%;
+		justify-content: center;	
+		background: lightgreen;
+
+
+		.footer-section__contact_container{
+			width: 945px;
+			min-height: 440px;
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+			background: rgba(0, 0, 0, .5);
+
+
+			.form{
+				display: flex;
+				flex-direction: column;
+				width: 490px;
+				flex-wrap: wrap;
+				justify-content: space-between;
+			
+
+				.form__wrap{
+					display: flex;
+					justify-content: space-between;
+					width: 100%;
+
+					.form__wrap_full-name{
+						width: 48%;
+					}
+
+					.form__wrap_email{
+						width: 48%;
+					}
+				}
+
+				.form__wrap_message{
+					width: 100%;
+
+				}
+
+				.form__bottom{
+					display: flex;
+					justify-content: space-between;
+					width: 100%;
+
+
+					.form__bottom_label{
+
+						
+						.form__bottom_label_checkbox{
+
+						}
+
+						.label_checkbox{
+
+						}
+					}
+
+					.form__bottom_send-btn{
+							
+					}
+				}
+			}
+
+				.container-contact {
+					width: 195px;
+					display: flex;
+					flex-direction: column;
+					
+
+					.container-contact__address{
+						
+					}
+					.container-contact__phone{
+
+					}
+					.container-contact__email{
+
+					}
+				}
+			}
+		
+}
+
+	.footer-section__copyright{
+	display: flex;
+	width: 100%;
+	height: 60px;
+	background: $darkgrey;
+	justify-content: space-between;
+	align-items: center;
+
+		.footer-section__copyright_text{
+			color: #fff;
+
+		}
+
+		.footer-section__copyright_social{
+
+
+			.footer-section__copyright_social_link{
+
+			}
+		}
+	}
+}
+
+
+
+
+/* AIzaSyBNUuvlpl71E0TMHB4Uatz3Uube9vuf6tw
+
+[
+  {
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#ebe3cd"
+      }
+    ]
+  },
+  {
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#523735"
+      }
+    ]
+  },
+  {
+    "elementType": "labels.text.stroke",
+    "stylers": [
+      {
+        "color": "#f5f1e6"
+      }
+    ]
+  },
+  {
+    "featureType": "administrative",
+    "elementType": "geometry.stroke",
+    "stylers": [
+      {
+        "color": "#c9b2a6"
+      }
+    ]
+  },
+  {
+    "featureType": "administrative.land_parcel",
+    "elementType": "geometry.stroke",
+    "stylers": [
+      {
+        "color": "#dcd2be"
+      }
+    ]
+  },
+  {
+    "featureType": "administrative.land_parcel",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#ae9e90"
+      }
+    ]
+  },
+  {
+    "featureType": "landscape.natural",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#dfd2ae"
+      }
+    ]
+  },
+  {
+    "featureType": "poi",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#dfd2ae"
+      }
+    ]
+  },
+  {
+    "featureType": "poi",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#93817c"
+      }
+    ]
+  },
+  {
+    "featureType": "poi.park",
+    "elementType": "geometry.fill",
+    "stylers": [
+      {
+        "color": "#a5b076"
+      }
+    ]
+  },
+  {
+    "featureType": "poi.park",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#447530"
+      }
+    ]
+  },
+  {
+    "featureType": "road",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#f5f1e6"
+      }
+    ]
+  },
+  {
+    "featureType": "road.arterial",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#fdfcf8"
+      }
+    ]
+  },
+  {
+    "featureType": "road.highway",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#f8c967"
+      }
+    ]
+  },
+  {
+    "featureType": "road.highway",
+    "elementType": "geometry.stroke",
+    "stylers": [
+      {
+        "color": "#e9bc62"
+      }
+    ]
+  },
+  {
+    "featureType": "road.highway.controlled_access",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#e98d58"
+      }
+    ]
+  },
+  {
+    "featureType": "road.highway.controlled_access",
+    "elementType": "geometry.stroke",
+    "stylers": [
+      {
+        "color": "#db8555"
+      }
+    ]
+  },
+  {
+    "featureType": "road.local",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#806b63"
+      }
+    ]
+  },
+  {
+    "featureType": "transit.line",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#dfd2ae"
+      }
+    ]
+  },
+  {
+    "featureType": "transit.line",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#8f7d77"
+      }
+    ]
+  },
+  {
+    "featureType": "transit.line",
+    "elementType": "labels.text.stroke",
+    "stylers": [
+      {
+        "color": "#ebe3cd"
+      }
+    ]
+  },
+  {
+    "featureType": "transit.station",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#dfd2ae"
+      }
+    ]
+  },
+  {
+    "featureType": "water",
+    "elementType": "geometry.fill",
+    "stylers": [
+      {
+        "color": "#b9d3c2"
+      }
+    ]
+  },
+  {
+    "featureType": "water",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#92998d"
+      }
+    ]
+  }
+]
+
+
+
+
+
+ */

@@ -1,0 +1,37 @@
+// =======================================================================
+// Font
+// =======================================================================
+
+
+@font-face {
+  font-family: 'Beyno';
+  src: url('../fonts/beyno/beyno.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/beyno/beyno.otf')  format('opentype'),
+	url('../fonts/beyno/beyno.woff') format('woff'),
+	url('../fonts/beyno/beyno.ttf')  format('truetype'),
+	url('../fonts/beyno/beyno.svg#Untitled') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Lato-Bold';
+  src: url('../fonts/lato/lato-bold/Lato-Bold.eot?#iefix') format('embedded-opentype'),  
+	  url('../fonts/lato/lato-bold/Lato-Bold.woff') format('woff'), 
+	  url('../fonts/lato/lato-bold/Lato-Bold.ttf')  format('truetype'), 
+	  url('../fonts/lato/lato-bold/Lato-Bold.svg#Lato-Bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Lato-Regular';
+  src: url('../fonts/lato/lato-regular/Lato-Regular.eot?#iefix') format('embedded-opentype'),  
+  	url('../fonts/lato/lato-regular/Lato-Regular.woff') format('woff'), 
+  	url('../fonts/lato/lato-regular/Lato-Regular.ttf')  format('truetype'), 
+  	url('../fonts/lato/lato-regular/Lato-Regular.svg#Lato-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

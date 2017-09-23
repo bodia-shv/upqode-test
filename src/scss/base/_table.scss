@@ -1,0 +1,21 @@
+// =======================================================================
+// Tables
+// =======================================================================
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin: 0 0 $magic-number;
+}
+
+caption {
+    caption-side: $caption-side;
+    color: $caption-color;
+    padding-bottom: $magic-number;
+    padding-top: $magic-number;
+    text-align: left;
+}
+
+th {
+    text-align: left;
+}

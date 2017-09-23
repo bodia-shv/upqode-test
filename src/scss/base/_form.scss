@@ -1,0 +1,90 @@
+// =======================================================================
+// Form
+// =======================================================================
+
+
+form {
+    margin: 0 0 $magic-number;
+}
+
+::-webkit-input-placeholder {
+    color: inherit;
+    opacity: .54;
+}
+
+[role="button"] {
+    cursor: pointer;
+}
+
+legend {
+    display: block;
+    font-size: $legend-font-size;
+    line-height: inherit;
+    margin-bottom: $magic-number / 2;
+    padding: 0;
+    width: 100%;
+}
+
+// Reset fieldset style
+fieldset {
+    border: 0;
+    margin: 0;
+    min-width: 0;
+    padding: 0;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: $magic-number / 2;
+}
+
+// Reset fonts for relevant elements
+input,
+button,
+select,
+textarea {
+    line-height: inherit;
+}
+
+// Allow only vertical resizing of textareas.
+textarea {
+    resize: vertical;
+}
+
+/**
+ * OS "clickable elements" fix for role="button"
+ *
+ * Fixes "clickability" issue (and more generally, the firing of events
+ * such as focus as well) for traditionally non-focusable elements with
+ * role="button"
+ *
+ * See: https://developer.mozilla.org/en-US/docs/Web/Events/click#Safari_Mobile
+ */
+[role="button"] {
+    cursor: pointer;
+}
+
+// Fix width issue
+input[type="search"] {
+    box-sizing: border-box;
+    -webkit-appearance: none;
+}
+
+input[type="file"] {
+    border-width: 0;
+    padding: 0;
+}
+
+input[type="date"],
+input[type="time"],
+input[type="datetime-local"],
+input[type="month"] {
+    -webkit-appearance: listbox;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    &:disabled {
+        cursor: disabled;
+    }
+}

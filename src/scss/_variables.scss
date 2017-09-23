@@ -1,0 +1,92 @@
+// =======================================================================
+// Variables
+// =======================================================================
+
+
+// Colours
+// -----------------------------------------------------------------------
+$color-primary:             #cc3b33 !default;
+
+// 5 shades of gray
+$gray-darker:               #222 !default;
+$gray-dark:                 #333 !default;
+$gray:                      #555 !default;
+$gray-light:                #999 !default;
+$gray-lighter:              #eee !default;
+
+// Base body style
+// -----------------------------------------------------------------------
+$body-bg:                   #fdfdfd !default;
+$body-color:                $gray-darker !default;
+
+// Selection
+// -----------------------------------------------------------------------
+$selection-bg:              $color-primary !default;
+$selection-color:           $body-bg !default;
+
+// Link
+// -----------------------------------------------------------------------
+$link-color:                $color-primary !default;
+$link-decoration:           none !default;
+$link-hover-color:          darken($link-color, 15%) !default;
+$link-hover-decoration:     underline !default;
+
+// Horizontal rule
+// -----------------------------------------------------------------------
+$hr-color:                  $gray-lighter !default;
+
+// Layout
+// -----------------------------------------------------------------------
+$site-width:                960px !default;
+
+// Typography
+// -----------------------------------------------------------------------
+
+// Font family
+$font-family-sans-serif:    -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif !default;
+$font-family-serif:         Georgia, "Times New Roman", Times, serif !default;
+$font-family-mono:          Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+
+$font-size-root:            16px !default;
+
+$font-family-base:          $font-family-sans-serif !default;
+$font-size-base:            1rem !default;
+$font-weight-base:          400 !default;
+$line-height-base:          1.5 !default;
+
+// Heading
+$heading-color:             inherit !default;
+$heading-font-family:       inherit !default;
+$heading-line-height:       1.1 !default;
+$heading-font-weight:       600 !default;
+
+// Heading size
+$font-size-h1:              2.5rem !default;
+$font-size-h2:              2rem !default;
+$font-size-h3:              1.75rem !default;
+$font-size-h4:              1.5rem !default;
+$font-size-h5:              1.25rem !default;
+$font-size-h6:              1rem !default;
+
+// Semantics
+$abbr-border-color:         $gray-light !default;
+$blockquote-border-color:   $color-primary !default;
+$code-color:                $color-primary !default;
+$code-font-family:          $font-family-mono !default;
+$code-font-size:            90% !default;
+$mark-bg:                   $color-primary !default;
+$pre-bg:                    $gray-lighter !default;
+$pre-color:                 $gray-dark !default;
+$small-font-size:           75% !default;
+
+// Magic number (for padding, margin etc)
+$magic-number:              1rem !default;
+
+// Table
+// -----------------------------------------------------------------------
+$caption-side:              bottom !default;
+$caption-color:             $gray-light !default;
+
+// Form
+// -----------------------------------------------------------------------
+$legend-font-size:          1.5rem !default;

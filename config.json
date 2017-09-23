@@ -1,0 +1,33 @@
+{
+  "autoprefixer": [
+    "last 2 versions",
+    "> 1%",
+    "ie >= 9",
+    "android >= 4.4"
+  ],
+  "clean": ["dist"],
+  "copy": {
+    "src": "src/*.*",
+    "dest": "dist"
+  },
+  "css": {
+    "src": "src/scss/**/*.scss",
+    "dest": "dist/assets/css"
+  },
+  "fonts": { 
+    "src": "src/fonts/**/*.*",
+     "dest": "dist/assets/fonts"
+   },
+  "html": {
+    "src": "src/html",
+    "dest": "dist"
+  },
+  "img": {
+    "src": "src/img/*.{gif,jpg,png}",
+    "dest": "dist/assets/img"
+  },
+  "js": {
+    "src": "src/js/**/*.js",
+    "dest": "dist/assets/js"
+  }
+}
