@@ -5,23 +5,29 @@
 
 // Colours
 // -----------------------------------------------------------------------
+$darkgray : #232323;
+
+$blue : #009dda;
+$purple : #503392;
+$yellow : #fff200;
+$gray : #999999;
+$lightgray : #ebebeb;
 $color-primary:             #cc3b33 !default;
 
 // 5 shades of gray
 $gray-darker:               #222 !default;
 $gray-dark:                 #333 !default;
-$gray:                      #555 !default;
-$gray-light:                #999 !default;
+$gray-light:                #888 !default;
 $gray-lighter:              #eee !default;
 
 // Base body style
 // -----------------------------------------------------------------------
 $body-bg:                   #fdfdfd !default;
-$body-color:                $gray-darker !default;
+$body-color:                $gray !default;
 
 // Selection
 // -----------------------------------------------------------------------
-$selection-bg:              $color-primary !default;
+$selection-bg:              $lightgray !default;
 $selection-color:           $body-bg !default;
 
 // Link

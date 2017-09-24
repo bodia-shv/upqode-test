@@ -1,3 +1,158 @@
 // =======================================================================
 // Header
 // =======================================================================
+.header-section{
+	width: 100%;
+	height: 70px;
+	padding: 0 230px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	position: fixed;
+	background:#fff;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 10000;
+
+	.header-section__logo{
+
+
+		.header-section__logo_link{
+			font: 30px/20px 'Beyno';
+			color: $blue;
+
+			.logo_color{
+				color: $purple;
+			}
+		}
+	}
+
+	.header-section__nav{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		align-content: center;
+
+		.header-section__nav_menu{
+			width: 100%;
+			display: flex;
+			margin: 0px;
+			padding: 0px;
+			align-items: center;
+
+			.pos-rel-submenu{
+				position: relative;
+			}
+
+			.header-section__nav_menu_item{
+				margin: 0  0 0 60px;
+				height: 70px;
+				display: flex;
+				align-items: center;
+
+				
+			
+				.header-section__nav_menu_item_link{
+					font: 16px/24px 'Lato-Regular';
+					letter-spacing: 1px;
+					color: $darkgray;
+
+				}
+
+
+				.submenu{
+					width: 180px;
+					background: rgba(0, 0, 0, .5);
+					flex-direction: column;
+					display: none;
+					justify-content: space-around;
+					padding: 10px 0 10px 16px;
+					position: absolute;
+					top: 70px;
+					border-top: 2px solid $yellow;
+
+
+
+
+					.submenu__item{
+						
+
+
+						.submenu__item_link{
+							font: 14px/36px 'Lato-Light';
+							color: #fdfdfd;
+
+
+
+							&:hover{
+								color: $yellow;
+								text-decoration: none;
+
+								.toggle_arrow{
+									display: inline-block;
+								}
+							}
+						}
+						.toggle_arrow{
+							display: none;
+						}
+
+						.sub-submenu{
+							width: 180px;
+							background: rgba(0, 0, 0, .5);
+							display: none;
+							flex-direction: column;
+							justify-content: space-around;
+							padding: 10px 0 10px 16px;
+							position: absolute;
+							border-top: 2px solid $yellow;
+							right: -180px;
+							top: 85px;
+
+							.sub-submenu__item{
+								
+
+								.sub-submenu__item_link{
+									font: 14px/36px 'Lato-Light';
+									color: #fdfdfd;
+
+									&:hover{
+										color: $yellow;
+										text-decoration: none;
+
+										.toggle_arrow{
+											display: inline-block;
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		.header-section__form{
+			display: flex;
+			align-self: center;
+			margin: 0 0 0 45px;
+
+			.header-section__form_search{
+				width: 180px;
+				height: 30px;
+				box-sizing: border-box;
+				padding-right: 20px;
+				border: none;
+				background: #e8e4f1 url('../img/search.png') no-repeat;
+				background-position: 95%;
+				outline: none;
+				text-indent: 10px;
+
+			}
+		}
+	}
+
+	.header-section__burger-btn{
+		display: none;
+	}
+}

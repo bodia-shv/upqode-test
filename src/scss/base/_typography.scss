@@ -55,18 +55,7 @@ p {
     margin-bottom: $magic-number;
 }
 
-// Links
-// -----------------------------------------------------------------------
-a {
-    color: $link-color;
-    text-decoration: $link-decoration;
 
-    &:hover,
-    &:focus {
-        color: $link-hover-color;
-        text-decoration: $link-hover-decoration;
-    }
-}
 
 // Lists
 // -----------------------------------------------------------------------

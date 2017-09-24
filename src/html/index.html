@@ -19,31 +19,31 @@
         <link rel="stylesheet" href="assets/css/app.min.css">
     </head>
     <body>
-        <header class="header-section">
+        <header class="header-section" >
             <div class="header-section__logo">
                 <a href="#" class="header-section__logo_link"><span class="logo_color">UP</span>QODE</a>
             </div>
             <nav class="header-section__nav">
-                <ul class="header-section__nav_menu">
-                    <li class="header-section__nav_menu_item"><a href="#" class="header-section__nav_menu_item_link">Home</a></li>
-                    <li class="header-section__nav_menu_item"><a href="#" class="header-section__nav_menu_item_link">Products</a>
+                <ul class="header-section__nav_menu main_menu">
+                    <li class="header-section__nav_menu_item"><a href="#home" class="header-section__nav_menu_item_link">Home</a></li>
+                    <li class="header-section__nav_menu_item pos-rel-submenu hover_menu"><a href="#products" class="header-section__nav_menu_item_link ">Products</a>
                         <ul class="submenu">
-                            <li class="submenu__item"> <a href="#" class="submenu__item_link"> > Name Surname</a></li>
-                            <li class="submenu__item"><a href="#" class="submenu__item_link"> > Nelson Noa Chris</a></li>
-                            <li class="submenu__item"> <a href="#" class="submenu__item_link"> > Name Surname</a>
+                            <li class="submenu__item"> <a href="#" class="submenu__item_link"> ><span class="toggle_arrow">></span> Name Surname</a></li>
+                            <li class="submenu__item"><a href="#" class="submenu__item_link"> ><span class="toggle_arrow">></span> Nelson Noa Chris</a></li>
+                            <li class="submenu__item hover_menu_1" > <a href="#" class="submenu__item_link"> ><span class="toggle_arrow">></span> Name Surname</a>
                                 <ul class="sub-submenu">
-                                    <li class="sub-submenu__item"><a href="" class="sub-submenu__item_link"> > Name Surname</a></li>
-                                    <li class="sub-submenu__item"><a href="" class="sub-submenu__item_link"> > Nelson Noa Chris</a></li>
-                                    <li class="sub-submenu__item"><a href="" class="sub-submenu__item_link"> > Name Surname</a></li>
-                                    <li class="sub-submenu__item"><a href="" class="sub-submenu__item_link"> > Nelson Noa</a> > Nelson Noa</li>
-                                    <li class="sub-submenu__item"><a href="" class="sub-submenu__item_link"> > Nelson Noa Chris</a></li>
+                                    <li class="sub-submenu__item"><a href="" class="sub-submenu__item_link"> ><span class="toggle_arrow">></span> Name Surname</a></li>
+                                    <li class="sub-submenu__item"><a href="" class="sub-submenu__item_link"> ><span class="toggle_arrow">></span> Nelson Noa Chris</a></li>
+                                    <li class="sub-submenu__item"><a href="" class="sub-submenu__item_link"> ><span class="toggle_arrow">></span> Name Surname</a></li>
+                                    <li class="sub-submenu__item"><a href="" class="sub-submenu__item_link"> ><span class="toggle_arrow">></span> Nelson Noa</a></li>
+                                    <li class="sub-submenu__item"><a href="" class="sub-submenu__item_link"> ><span class="toggle_arrow">></span> Nelson Noa Chris</a></li>
                                 </ul>
                             </li>
-                            <li class="submenu__item"><a href="#" class="submenu__item_link"> > Nelson Noa</a></li>
+                            <li class="submenu__item"><a href="#" class="submenu__item_link"> ><span class="toggle_arrow">></span> Nelson Noa</a></li>
                         </ul>
                     </li>
-                    <li class="header-section__nav_menu_item"><a href="#" class="header-section__nav_menu_item_link">About</a></li>
-                    <li class="header-section__nav_menu_item"><a href="#" class="header-section__nav_menu_item_link">Contact</a></li>
+                    <li class="header-section__nav_menu_item"><a href="#about_us" class="header-section__nav_menu_item_link">About</a></li>
+                    <li class="header-section__nav_menu_item"><a href="#contact" class="header-section__nav_menu_item_link">Contact</a></li>
                 </ul>
                 <form action="" class="header-section__form">
                     <input type="search" class="header-section__form_search">
@@ -54,8 +54,33 @@
         </header>
 
 
-        <section class="banner">
-            <div class="baner__slider"></div>
+<section class="banner" id="home">
+            <div class="banner__slider_controls">
+
+                <span class="slider-prev">
+                </span>
+                <span class="slider-next">
+                </span>
+            </div>
+
+
+            <ul class="banner__slider_wrapper">
+                <li class="banner__slider" style="background-image: url('assets/img/slider-bg.jpg');">
+                    <div class="banner__width">
+
+                    </div>
+                </li>
+                <li class="banner__slider" style="background-image: url('assets/img/slider-bg.jpg');">
+                    <div class="banner__width">
+
+                    </div>
+                </li>
+                <li class="banner__slider" style="background-image: url('assets/img/slider-bg.jpg');">
+                    <div class="banner__width">
+
+                    </div>
+                </li>
+            </ul>
             <div class="banner__content">
                 <h1 class="banner__content_title"><span class="banner_color">CREATIVE</span> DESIGN AGENCY</h1>
                 <p class="banner__content_text">Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Curabitur blandit tempus porttitor. </p>
@@ -70,69 +95,69 @@
             </div>
             <div class="choose-us__content">
                 <div class="choose-us__content_item">
-                    <div class="choose-us__content_item_img"></div>
+                    <div class="choose-us__content_item_img choose-img-1"></div>
                     <h3 class="choose-us__content_item_title">YOUR TITLE</h3>
                     <p class="choose-us__content_item_text">Duis bibendum diam non erat facilaisis en ter tincidunt. Duis </p>
                     <div class="choose-us__hover">
                         <p class="choose-us__hover_title">SEE MORE</p>
                         <div class="choose-us__hover_wrap">
-                            <div class="choose-us__hover_wrap_item"></div>
-                            <div class="choose-us__hover_wrap_item"></div>
+                            <div class="choose-us__hover_wrap_item hover-img-1"></div>
+                            <div class="choose-us__hover_wrap_item hover-img-2"></div>
                         </div>
                     </div>
                 </div>
                 <div class="choose-us__content_item">
-                    <div class="choose-us__content_item_img"></div>
+                    <div class="choose-us__content_item_img choose-img-2"></div>
                     <h3 class="choose-us__content_item_title">YOUR TITLE</h3>
                     <p class="choose-us__content_item_text">Duis bibendum diam non erat facilaisis en ter tincidunt. Duis </p>
                     <div class="choose-us__hover">
                         <p class="choose-us__hover_title">SEE MORE</p>
                         <div class="choose-us__hover_wrap">
-                            <div class="choose-us__hover_wrap_item"></div>
-                            <div class="choose-us__hover_wrap_item"></div>
+                            <div class="choose-us__hover_wrap_item hover-img-1"></div>
+                            <div class="choose-us__hover_wrap_item hover-img-2"></div>
                         </div>
                     </div>
                 </div>
                 <div class="choose-us__content_item">
-                    <div class="choose-us__content_item_img"></div>
+                    <div class="choose-us__content_item_img choose-img-3"></div>
                     <h3 class="choose-us__content_item_title">YOUR TITLE</h3>
                     <p class="choose-us__content_item_text">Duis bibendum diam non erat facilaisis en ter tincidunt. Duis </p>
                     <div class="choose-us__hover">
                         <p class="choose-us__hover_title">SEE MORE</p>
                         <div class="choose-us__hover_wrap">
-                            <div class="choose-us__hover_wrap_item"></div>
-                            <div class="choose-us__hover_wrap_item"></div>
+                            <div class="choose-us__hover_wrap_item hover-img-1"></div>
+                            <div class="choose-us__hover_wrap_item hover-img-2"></div>
                         </div>
                     </div>
                 </div>
                 <div class="choose-us__content_item">
-                    <div class="choose-us__content_item_img"></div>
+                    <div class="choose-us__content_item_img choose-img-4"></div>
                     <h3 class="choose-us__content_item_title">YOUR TITLE</h3>
                     <p class="choose-us__content_item_text">Duis bibendum diam non erat facilaisis en ter tincidunt. Duis </p>
                     <div class="choose-us__hover">
                         <p class="choose-us__hover_title">SEE MORE</p>
                         <div class="choose-us__hover_wrap">
-                            <div class="choose-us__hover_wrap_item"></div>
-                            <div class="choose-us__hover_wrap_item"></div>
+                            <div class="choose-us__hover_wrap_item hover-img-1"></div>
+                            <div class="choose-us__hover_wrap_item hover-img-2"></div>
                         </div>
                     </div>
                 </div>
                 <div class="choose-us__content_item">
-                    <div class="choose-us__content_item_img"></div>
+                    <div class="choose-us__content_item_img choose-img-5"></div>
                     <h3 class="choose-us__content_item_title">YOUR TITLE</h3>
                     <p class="choose-us__content_item_text">Duis bibendum diam non erat facilaisis en ter tincidunt. Duis </p>
                     <div class="choose-us__hover">
                         <p class="choose-us__hover_title">SEE MORE</p>
                         <div class="choose-us__hover_wrap">
-                            <div class="choose-us__hover_wrap_item"></div>
-                            <div class="choose-us__hover_wrap_item"></div>
+                            <div class="choose-us__hover_wrap_item hover-img-1"></div>
+                            <div class="choose-us__hover_wrap_item hover-img-2"></div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="product">
+        <section class="product" id="products">
             <div class="product__top">
                 <h2 class="product__top_title">OUR <span class="product_color">PRODUCT</span></h2>
             </div>
@@ -214,7 +239,7 @@
             </div>
         </section>
 
-        <section class="about">
+        <section class="about" id="about_us">
             <div class="about__skills">
                 <h2 class="about__skills_title"><span class="about_color">ABOUT</span> US</h2>
                 <p class="about__skills_subtitle">Quisque fermentum, nisl mattis volutpat rhoncus, tellus est congue nibh, ut euism
@@ -226,7 +251,7 @@ Nullam at scelerisque tellus mattis volutpat rhoncus, </p>
                         <div class="container-skills__title_percent">79%</div>
                     </div>
                     <div class="container-skills__level">
-                        <span class="container-skills__level_line photoshop__line"></span>
+                        <span class="container-skills__level_line photoshop__skill"></span>
                     </div>
                 </div>
                 <div class="container-skills">
@@ -235,7 +260,7 @@ Nullam at scelerisque tellus mattis volutpat rhoncus, </p>
                         <div class="container-skills__title_percent">90%</div>
                     </div>
                     <div class="container-skills__level">
-                        <span class="container-skills__level_line html-css__line"></span>
+                        <span class="container-skills__level_line html-css__skill"></span>
                     </div>
                 </div>
                 <div class="container-skills">
@@ -244,7 +269,7 @@ Nullam at scelerisque tellus mattis volutpat rhoncus, </p>
                         <div class="container-skills__title_percent">69%</div>
                     </div>
                     <div class="container-skills__level">
-                        <span class="container-skills__level_line javascript__line"></span>
+                        <span class="container-skills__level_line javascript__skill"></span>
                     </div>
                 </div>
                 <div class="container-skills">
@@ -253,7 +278,7 @@ Nullam at scelerisque tellus mattis volutpat rhoncus, </p>
                         <div class="container-skills__title_percent">92%</div>
                     </div>
                     <div class="container-skills__level">
-                        <span class="container-skills__level_line wordpress__line"></span>
+                        <span class="container-skills__level_line wordpress__skill"></span>
                     </div>
                 </div>
             </div>
@@ -262,47 +287,50 @@ Nullam at scelerisque tellus mattis volutpat rhoncus, </p>
 
 
         <footer class="footer-section">
-            <div class="footer-section__top">
+            <div class="footer-section__top" id="contact">
                 <h2 class="footer-section__top_title">GET IN <span class="footer-section_color">TOUCH</span></h2>
                 <p class="footer-section__top_text">Quisque fermentum, nisl mattis volutpat rhoncus, tellus est congue nibh, ut euismod quam nisi quis felis. 
 Nullam at scelerisque tellus mattis volutpat rhoncus, </p>
             </div>
             <div class="footer-section__contact"  id="map">
-                <div class="footer-section__contact_container">
+                
+            </div>
+            <div class="footer-section__container">
                     <form action="" class="form">
                         <div class="form__wrap">
-                            <input type="text" class="form__wrap_full-name" value="Full Name">
-                            <input type="text" class="form__wrap_email" value="E-mail Address">                      
+                            <input type="text" class="form__wrap_full-name" placeholder="Full Name" required>
+                            <input type="text" class="form__wrap_email" placeholder="E-mail Address" required>                      
                         </div>
-                        <textarea name="" id="" cols="30" rows="10" class="form__wrap_message">Message</textarea>
+                        <textarea name="" id="" cols="30" rows="7" class="form__wrap_message" required placeholder="Message"></textarea>
                         <div class="form__bottom">
                             <div class="form__bottom_label">
                                 <input type="checkbox" id="check" class="form__bottom_label_checkbox">
-                                <label for="check" class="label_checkbox">I LIKE THIS COMPANY</label>
+                                <label for="check" class="label_checkbox"> I LIKE THIS COMPANY</label>
                             </div>
                             <button class="form__bottom_send-btn">Send</button>
                         </div>
                     </form>
-                    <div class="container-contact">
+                    <div class="container-contact" >
                         <p class="container-contact__address">69/A, Some Street Name Your City, code 01234 Country Name</p>
                         <p class="container-contact__phone">+880 123 456 78 98<br>+860 987 648 74 95</p>
                         <p class="container-contact__email">company@mail.com<br>sales@mail.com</p>
                     </div>
+
                 </div>
-            </div>
             <div class="footer-section__copyright">
                 <p class="footer-section__copyright_text">Copyright © Company. All Rights Reserved  2016</p>
                 <div class="footer-section__copyright_social">
-                    <a href="" class="footer-section__copyright_social_link"></a>
-                    <a href="" class="footer-section__copyright_social_link"></a>
-                    <a href="" class="footer-section__copyright_social_link"></a>
-                    <a href="" class="footer-section__copyright_social_link"></a>
+                    <a href="" class="footer-section__copyright_social_link ft-link-1"></a>
+                    <a href="" class="footer-section__copyright_social_link ft-link-2"></a>
+                    <a href="" class="footer-section__copyright_social_link ft-link-3"></a>
+                    <a href="" class="footer-section__copyright_social_link ft-link-4"></a>
                 </div>
             </div>
         </footer>
-
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAo-6oa9j3S7oozfrbRFeefchwIrpgo9lg"></script>
         <script src="assets/js/app.min.js"></script>
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBNUuvlpl71E0TMHB4Uatz3Uube9vuf6tw&callback=initMap"
-    async defer></script>
     </body>
 </html>

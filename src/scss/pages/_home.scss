@@ -2,15 +2,11 @@
 // Home page related styles
 // =======================================================================
 
-@import "home/about_us";
+@import "home/media";
 
-$darkgrey : #232323;
 
-$blue : #009dda;
-$purple : #503392;
-$yellow : #fff200;
-$grey : #999999;
-$lightgrey : #ebebeb;
+
+
 
 a{
 	text-decoration: none;
@@ -21,126 +17,81 @@ li {
 }
 
 body{
-	width: 1600px;
+	width: 100%;
 	margin: 0;
 }
-
-.header-section{
-	width: 100%;
-	height: 70px;
-	padding: 0 230px;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	position: fixed;
-	background:#fff;
-	top: 0;
-	left: 0;
-	right: 0;
-	z-index: 100;
-
-	.header-section__logo{
-
-
-		.header-section__logo_link{
-			font: 30px/20px 'Beyno';
-			color: $blue;
-
-			.logo_color{
-				color: $purple;
-			}
-		}
-	}
-
-	.header-section__nav{
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		align-content: center;
-
-		.header-section__nav_menu{
-			width: 100%;
-			display: flex;
-			margin: 0px;
-			padding: 0px;
-			align-items: center;
-
-			.header-section__nav_menu_item{
-				margin: 0  0 0 60px;
-			
-				.header-section__nav_menu_item_link{
-					font: 16px/24px 'Lato-Regular';
-					letter-spacing: 1px;
-					color: $darkgrey;
-				}
-
-
-				.submenu{
-					display: none;
-
-
-					.submenu__item{
-
-
-						.submenu__item_link{
-							font: 16px/24px 'Lato-Regular';
-						}
-
-						.sub-submenu{
-
-
-							.sub-submenu__item{
-
-
-								.sub-submenu__item_link{
-									font: 16px/24px 'Lato-Regular';
-
-								}
-							}
-						}
-					}
-				}
-			}
-		}
-		.header-section__form{
-			display: flex;
-			align-self: center;
-			margin: 0 0 0 45px;
-
-			.header-section__form_search{
-				width: 180px;
-				height: 30px;
-				border: none;
-				background: #e8e4f1 url('search.png') no-repeat;
-				background-position: center right;
-
-			}
-		}
-	}
-
-	.header-section__burger-btn{
-		display: none;
-	}
+.active{
+	font: 17px/24px 'Lato-Bold' !important;
 }
-.banner{
+
+
+ .banner{
 	display: flex;
 	width: 100%;
-	min-height: 860px;
-	padding: 20px 230px 0;
+	height: 860px;
+	box-sizing: border-box;
 	justify-content: center;
+	position: relative;
 	align-items: center;
-	background: #eb01a5;/* fallback */
-    background-image: linear-gradient(to right, #eb01a5, #d13531);
 
-	.banner__slider{
+	
+
+	&:after{
+     	content: '';
+     	position: absolute;
+     	width: 100%;
+     	height: 100%;
+     	top: 0;
+     	right: 0;
+     	bottom: 0;
+     	left: 0;
+     	background-image: linear-gradient(to right, rgba(0, 157, 218, .9), rgba(80, 51, 146, .9));
+}
+	.banner__slider_wrapper{
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		margin: 0;
+		padding: 0;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
 
 	}
+	.banner__slider{
+		position: absolute;
+		min-width: 100vh;
+		min-height: 95vh;
+		margin: 0;
+		padding: 0;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background-size: cover;
+		background-position: center;
+
+	}
+.banner__width{
+		width: 1600px;
+		height: 860px;
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+			
+		}
 
 	.banner__content{
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		justify-content: space-between;
+		position: absolute;
+		z-index: 100;
+
 
 
 		.banner__content_title{
@@ -163,7 +114,7 @@ body{
 			color: #fff;
 		}
 	}
-}
+} 
 
 
 .choose-us{
@@ -185,13 +136,13 @@ body{
 		color: $blue;
 
 			.choose_color{
-				color: $darkgrey;
+				color: $darkgray;
 			}
 		}
 		.choose-us__top_text{
 		width: 660px;
 		font: 14px/24px 'Lato-Regular';
-		color: $grey;
+		color: $gray;
 		text-align: center;
 		}
 
@@ -208,24 +159,48 @@ body{
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
-			border: 1px solid $lightgrey;
+			border: 1px solid $lightgray;
 			box-sizing: border-box;
 			position: relative;
 			text-align: center;
 			padding: 30px 25px;
 
+				.choose-img-1{
+					background: url('../img/img-1.png') no-repeat;
+					background-position: center;
+				}
+				.choose-img-2{
+					background: url('../img/img-2.png') no-repeat;
+					background-position: center;
+				}
+				.choose-img-3{
+					background: url('../img/img-3.png') no-repeat;
+					background-position: center;
+				}
+				.choose-img-4{
+					background: url('../img/img-4.png') no-repeat;
+					background-position: center;
+				}
+				.choose-img-5{
+					background: url('../img/img-5.png') no-repeat;
+					background-position: center;
+				}
+
 
 			.choose-us__content_item_img{
 				width: 65px;
 				height: 55px;
-				background: #888;
 				display: flex;
 				align-self: center;
+
+
+
+
 			}
 
 			.choose-us__content_item_title{
 				font: 16px/50px 'Lato-Heavy';
-				color: $darkgrey;
+				color: $darkgray;
 				margin: 30px 0 0 ;
 			}
 
@@ -236,7 +211,7 @@ body{
 			}
 
 			.choose-us__hover{
-				display: flex;
+				display: none;
 				justify-content: center;
 				flex-wrap: wrap;
 				width: 100%;
@@ -260,6 +235,7 @@ body{
 					display: flex;
 					width: 85px;
 					padding:  0 0 35px;
+					margin: 0 auto;
 					justify-content: space-between;
 
 					.choose-us__hover_wrap_item{
@@ -268,11 +244,31 @@ body{
 						border: 1px solid #fff;
 						border-radius: 50%;
 
-						&:hover{
-							border-color: $purple;
-							background: #fff;
-						}
 
+						
+
+					}
+
+					.hover-img-1{
+						background: url('../img/hover-img-1.png') no-repeat;
+						background-position: center;
+
+						&:hover{
+							background: #fff url('../img/hover-img-1.1.png') no-repeat;
+							background-position: center;
+							border-color: $purple;
+
+						}
+					}
+					.hover-img-2{
+						background: url('../img/hover-img-2.2.png') no-repeat;
+						background-position: center;
+
+						&:hover{
+							background: #fff  url('../img/hover-img-2.png') no-repeat;
+							border-color: $purple;
+							
+						}
 					}
 				}
 			}
@@ -298,18 +294,22 @@ body{
 		align-self: center;
 		align-items: center;
 		justify-content: center;
-
-
-
+		background: #eb01a5;/* fallback */
+	    background-image: -webkit-linear-gradient(left, $blue , $purple );
+	    background-image: -o-linear-gradient(left, $blue , $purple );
+	    background-image: linear-gradient(to right, $blue , $purple );
+	
+	
+	
 		.product__top_title{
 			font: 35px/24px 'Lato-Bold';
 			color: #fff;
 			padding: 20px 0;
 			margin: 0;
-
-
+	
+	
 		}
-
+	
 		.product_color{
 			color: $yellow;
 		}
@@ -367,7 +367,7 @@ body{
 
 					.product__wrap-title_title{
 						font: 24px/96.96px 'Lato-Heavy';
-						color: $darkgrey;
+						color: $darkgray;
 
 					}
 
@@ -411,7 +411,7 @@ body{
 		
 		.about__skills_title{
 			font: 35px/24px 'Lato-Bold';
-			color: $darkgrey;
+			color: $darkgray;
 			margin-bottom: 30px;
 			
 			.about_color{
@@ -421,7 +421,7 @@ body{
 		
 		.about__skills_subtitle{
 			font: 14px/24px 'Lato-Regular';
-			color: $grey;
+			color: $gray;
 			margin-bottom: 50px;
 			letter-spacing: 1px;
 		}
@@ -460,25 +460,28 @@ body{
 				display: flex;
 				width: 100%;
 				padding: 3px;
-				border: 1px solid $lightgrey;
+				border: 1px solid $lightgray;
 
 				.container-skills__level_line{
 					height: 3px;
-					background-color: $blue;
+					width: 0;
+					background-color: $blue; 
+					-webkit-transition: width 2.2s ease;
+    				transition: width 2.2s ease;
 				}
 
-				.photoshop__line{
-					width: 79%;
-				}
-				.html-css__line{
-					width: 90%;
-				}
-				.javascript__line{
-					width: 69%;
-				}
-				.wordpress__line{
-					width: 92%;
-				}
+				// .photoshop__skill{
+					// width: 79%;
+				// }
+				// .html-css__skill{
+					// width: 90%;
+				// }
+				// .javascript__skill{
+					// width: 69%;
+				// }
+				// .wordpress__skill{
+					// width: 92%;
+				// }
 			}
 		}
 	}
@@ -486,374 +489,12 @@ body{
 	.about__bg-img{
 		width: 50%;
 		display: flex;
-	}
-}
-
-
-.footer-section{
-	display: flex;
-	width: 100%;
-	flex-direction: column;
-	
-
-	.footer-section__top{
-		display: flex;
-		width: 100%;
-		padding: 200px 230px 65px;
-		text-align: center;
-		flex-direction: column;
-		align-items: center;
-
-		.footer-section__top_title{
-			font: 35px/20px 'Lato-Bold';
-			color: $darkgrey;
-			margin-bottom: 25px;
-
-			.footer-section_color{
-				color: $blue;
-			}
-		}
-
-		.footer-section__top_text{
-			font: 14px/24px $grey;
-			width: 660px;
-		}
-	}
-
-
-	.footer-section__contact{
-		display: flex;
-		width: 100%;
-		justify-content: center;	
-		background: lightgreen;
-
-
-		.footer-section__contact_container{
-			width: 945px;
-			min-height: 440px;
-			display: flex;
-			justify-content: space-around;
-			align-items: center;
-			background: rgba(0, 0, 0, .5);
-
-
-			.form{
-				display: flex;
-				flex-direction: column;
-				width: 490px;
-				flex-wrap: wrap;
-				justify-content: space-between;
-			
-
-				.form__wrap{
-					display: flex;
-					justify-content: space-between;
-					width: 100%;
-
-					.form__wrap_full-name{
-						width: 48%;
-					}
-
-					.form__wrap_email{
-						width: 48%;
-					}
-				}
-
-				.form__wrap_message{
-					width: 100%;
-
-				}
-
-				.form__bottom{
-					display: flex;
-					justify-content: space-between;
-					width: 100%;
-
-
-					.form__bottom_label{
-
-						
-						.form__bottom_label_checkbox{
-
-						}
-
-						.label_checkbox{
-
-						}
-					}
-
-					.form__bottom_send-btn{
-							
-					}
-				}
-			}
-
-				.container-contact {
-					width: 195px;
-					display: flex;
-					flex-direction: column;
-					
-
-					.container-contact__address{
-						
-					}
-					.container-contact__phone{
-
-					}
-					.container-contact__email{
-
-					}
-				}
-			}
-		
-}
-
-	.footer-section__copyright{
-	display: flex;
-	width: 100%;
-	height: 60px;
-	background: $darkgrey;
-	justify-content: space-between;
-	align-items: center;
-
-		.footer-section__copyright_text{
-			color: #fff;
-
-		}
-
-		.footer-section__copyright_social{
-
-
-			.footer-section__copyright_social_link{
-
-			}
-		}
+		background: url('../img/ipad-about.png') no-repeat;
+		background-position: 90% 80%;
+		background-size: contain;
 	}
 }
 
 
 
 
-/* AIzaSyBNUuvlpl71E0TMHB4Uatz3Uube9vuf6tw
-
-[
-  {
-    "elementType": "geometry",
-    "stylers": [
-      {
-        "color": "#ebe3cd"
-      }
-    ]
-  },
-  {
-    "elementType": "labels.text.fill",
-    "stylers": [
-      {
-        "color": "#523735"
-      }
-    ]
-  },
-  {
-    "elementType": "labels.text.stroke",
-    "stylers": [
-      {
-        "color": "#f5f1e6"
-      }
-    ]
-  },
-  {
-    "featureType": "administrative",
-    "elementType": "geometry.stroke",
-    "stylers": [
-      {
-        "color": "#c9b2a6"
-      }
-    ]
-  },
-  {
-    "featureType": "administrative.land_parcel",
-    "elementType": "geometry.stroke",
-    "stylers": [
-      {
-        "color": "#dcd2be"
-      }
-    ]
-  },
-  {
-    "featureType": "administrative.land_parcel",
-    "elementType": "labels.text.fill",
-    "stylers": [
-      {
-        "color": "#ae9e90"
-      }
-    ]
-  },
-  {
-    "featureType": "landscape.natural",
-    "elementType": "geometry",
-    "stylers": [
-      {
-        "color": "#dfd2ae"
-      }
-    ]
-  },
-  {
-    "featureType": "poi",
-    "elementType": "geometry",
-    "stylers": [
-      {
-        "color": "#dfd2ae"
-      }
-    ]
-  },
-  {
-    "featureType": "poi",
-    "elementType": "labels.text.fill",
-    "stylers": [
-      {
-        "color": "#93817c"
-      }
-    ]
-  },
-  {
-    "featureType": "poi.park",
-    "elementType": "geometry.fill",
-    "stylers": [
-      {
-        "color": "#a5b076"
-      }
-    ]
-  },
-  {
-    "featureType": "poi.park",
-    "elementType": "labels.text.fill",
-    "stylers": [
-      {
-        "color": "#447530"
-      }
-    ]
-  },
-  {
-    "featureType": "road",
-    "elementType": "geometry",
-    "stylers": [
-      {
-        "color": "#f5f1e6"
-      }
-    ]
-  },
-  {
-    "featureType": "road.arterial",
-    "elementType": "geometry",
-    "stylers": [
-      {
-        "color": "#fdfcf8"
-      }
-    ]
-  },
-  {
-    "featureType": "road.highway",
-    "elementType": "geometry",
-    "stylers": [
-      {
-        "color": "#f8c967"
-      }
-    ]
-  },
-  {
-    "featureType": "road.highway",
-    "elementType": "geometry.stroke",
-    "stylers": [
-      {
-        "color": "#e9bc62"
-      }
-    ]
-  },
-  {
-    "featureType": "road.highway.controlled_access",
-    "elementType": "geometry",
-    "stylers": [
-      {
-        "color": "#e98d58"
-      }
-    ]
-  },
-  {
-    "featureType": "road.highway.controlled_access",
-    "elementType": "geometry.stroke",
-    "stylers": [
-      {
-        "color": "#db8555"
-      }
-    ]
-  },
-  {
-    "featureType": "road.local",
-    "elementType": "labels.text.fill",
-    "stylers": [
-      {
-        "color": "#806b63"
-      }
-    ]
-  },
-  {
-    "featureType": "transit.line",
-    "elementType": "geometry",
-    "stylers": [
-      {
-        "color": "#dfd2ae"
-      }
-    ]
-  },
-  {
-    "featureType": "transit.line",
-    "elementType": "labels.text.fill",
-    "stylers": [
-      {
-        "color": "#8f7d77"
-      }
-    ]
-  },
-  {
-    "featureType": "transit.line",
-    "elementType": "labels.text.stroke",
-    "stylers": [
-      {
-        "color": "#ebe3cd"
-      }
-    ]
-  },
-  {
-    "featureType": "transit.station",
-    "elementType": "geometry",
-    "stylers": [
-      {
-        "color": "#dfd2ae"
-      }
-    ]
-  },
-  {
-    "featureType": "water",
-    "elementType": "geometry.fill",
-    "stylers": [
-      {
-        "color": "#b9d3c2"
-      }
-    ]
-  },
-  {
-    "featureType": "water",
-    "elementType": "labels.text.fill",
-    "stylers": [
-      {
-        "color": "#92998d"
-      }
-    ]
-  }
-]
-
-
-
-
-
- */

@@ -1,0 +1,30 @@
+.banner__slider_controls {
+  position: absolute;
+  width: 100%;
+}
+
+.banner__slider_controls span {
+  margin-top: 0px;
+  opacity: 0.5;
+  position: relative;
+  z-index: 1000;
+  -webkit-transition: opacity 0.3s linear;
+  -moz-transition: opacity 0.3s linear;
+  -ms-transition: opacity 0.3s linear;
+  -o-transition: opacity 0.3s linear;
+  transition: opacity 0.3s linear;
+}
+
+.banner__slider_controls span:hover {
+  opacity: 1.0;
+}
+
+.banner__slider_controls .slider-prev {
+  float: left;
+  margin-left: 15px;
+}
+
+.banner__slider_controls .slider-next {
+  float: right;
+  margin-right: 15px;
+}

@@ -170,7 +170,7 @@ gulp.task('build', ['copy', 'css', 'fonts', 'js', 'img', 'html'], function() {
   return gulp.src('dist/**/*').pipe($.size({title: 'build'}));
 });
 // Deploy to github pages
-gulp.task('deploy', ['default'], () => {
+gulp.task('deploy', ['build'],  () => {
   return gulp.src('dist/**/*')
     .pipe($.ghPages());
 });

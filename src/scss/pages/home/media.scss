@@ -1,0 +1,1069 @@
+@media screen and (max-width: 1024px) {
+	.active-menu{
+		display: flex !important;
+	}
+.active{
+	font: 17px/24px 'Lato-Bold' !important;
+	color: #fff200 !important;
+}
+
+.header-section{
+	padding: 0 50px;
+
+
+	.header-section__logo{
+
+
+		.header-section__logo_link{
+
+
+			.logo_color{
+
+			}
+		}
+	}
+
+	.header-section__nav{
+
+
+		.header-section__nav_menu{
+			display: none;
+			position: absolute;
+			flex-direction: column;
+			top: 70px;
+			right: 400px;
+			background: rgba(0, 0, 0, .9);
+			border-top: 2px solid #fff200;
+			width: 200px;
+			padding: 0px;
+
+
+			.pos-rel-submenu{
+
+			}
+
+			.header-section__nav_menu_item{
+				width: 100%;
+
+
+				
+			
+				.header-section__nav_menu_item_link{
+					color: #fff;
+
+
+				}
+
+
+				.submenu{
+					left: 170px;
+					top: 30px;
+					background: rgba(0, 0, 0, .9);
+					
+
+
+
+
+
+
+					.submenu__item{
+						
+						
+
+
+						.submenu__item_link{
+							
+							font: 14px/45px 'Lato-Light';
+
+
+
+
+							&:hover{
+
+
+								.toggle_arrow{
+
+								}
+							}
+						}
+						.toggle_arrow{
+
+						}
+
+						.sub-submenu{
+							top: 100px;
+							background: rgba(0, 0, 0, .9);
+
+
+							.sub-submenu__item{
+								
+
+								.sub-submenu__item_link{
+
+
+									&:hover{
+;
+
+										.toggle_arrow{
+
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		.header-section__form{
+
+
+			.header-section__form_search{
+
+
+			}
+		}
+	}
+
+	.header-section__burger-btn{
+		display: block;
+		transform: rotateZ(90deg);
+		font-weight: bold;
+
+	}
+}
+.banner{
+
+
+	
+
+	&:after{
+
+}
+	.banner__slider_wrapper{
+
+
+	}
+	.banner__slider{
+
+
+	}
+.banner__width{
+
+			
+		}
+
+	.banner__content{
+
+
+
+
+		.banner__content_title{
+			font: 35px 'Lato-Bold';
+
+
+			.banner_color{
+
+			}
+		}
+
+		.banner__content_text{
+			width: 400px;
+			font: 14px/20px 'Lato-Regular';
+
+		}
+	}
+} 
+
+
+
+.choose-us{
+	padding: 50px 50px !important;
+	justify-content: center;
+
+
+	.choose-us__top{
+
+
+		.choose-us__top_title{
+			font: 28px/24px 'Lato-Bold';
+
+
+			.choose_color{
+
+			}
+		}
+		.choose-us__top_text{
+			font: 13px/20px 'Lato-Regular';
+
+		}
+
+	}
+
+
+	.choose-us__content{
+
+
+
+		.choose-us__content_item{
+			padding: 5px;
+			width: 150px;
+			min-height: 250px;
+
+
+				.choose-img-1{
+
+				}
+				.choose-img-2{
+
+				}
+				.choose-img-3{
+
+				}
+				.choose-img-4{
+
+				}
+				.choose-img-5{
+
+				}
+
+
+			.choose-us__content_item_img{
+
+
+
+
+
+
+			}
+
+			.choose-us__content_item_title{
+				font: 14px/36px 'Lato-Heavy';
+
+			}
+
+			.choose-us__content_item_text{
+				font: 12px/18px 'Lato-Light';
+
+			}
+
+			.choose-us__hover{
+
+
+			
+
+				.choose-us__hover_title{
+
+				}
+
+				.choose-us__hover_wrap{
+
+
+					.choose-us__hover_wrap_item{
+
+
+
+						
+
+					}
+
+					.hover-img-1{
+
+
+						&:hover{
+
+
+						}
+					}
+					.hover-img-2{
+
+
+						&:hover{
+
+							
+						}
+					}
+				}
+			}
+		}
+
+	}
+
+}
+
+.about{
+	padding: 50px 50px 0;
+
+
+
+	.about__skills{
+		width: 60%;
+
+
+
+		
+		.about__skills_title{
+			font: 28px/36px 'Lato-Heavy';
+
+			
+			.about_color{
+
+			}
+		}
+		
+		.about__skills_subtitle{
+			font: 13px/18px 'Lato-Regular';
+
+		}
+
+		.about__skills_text{
+			font: 14px/18px 'Lato-Regular';
+
+		}
+
+		.container-skills{
+
+
+			.container-skills__title{
+
+
+				.container-skills__title_name{
+					font: 12px/30px 'Lato-Bold';
+
+
+
+				}
+
+				.container-skills__title_percent{
+					font: 12px/30px 'Lato-Bold';
+
+
+				}
+
+			}
+
+			.container-skills__level{
+
+
+				.container-skills__level_line{
+
+
+				// .photoshop__skill{
+					// width: 79%;
+				// }
+				// .html-css__skill{
+					// width: 90%;
+				// }
+				// .javascript__skill{
+					// width: 69%;
+				// }
+				// .wordpress__skill{
+					// width: 92%;
+				// }
+			}
+		}
+	}
+
+	.about__bg-img{
+		width: 40%;
+		background-size: contain;
+		background-position: center bottom;
+
+
+	}
+}
+
+}
+
+.footer-section{
+
+	
+
+	.footer-section__top{
+		padding: 50px 50px 50px;
+
+
+		.footer-section__top_title{
+
+
+			.footer-section_color{
+
+			}
+		}
+
+		.footer-section__top_text{
+
+		}
+	}
+
+
+	.footer-section__contact{
+	
+
+
+	}
+	.footer-section__container{
+		width: 80%;
+
+
+
+			.form{
+				width: 300px;
+
+			
+
+				.form__wrap{
+
+
+
+					.form__wrap_full-name{
+						height: 30px;
+
+					}
+
+					.form__wrap_email{
+						height: 30px;
+
+					}
+				}
+
+				.form__wrap_message{
+
+
+				}
+
+				.form__bottom{
+
+
+
+					.form__bottom_label{
+
+
+						
+						.form__bottom_label_checkbox{
+							width: 10px;
+							height: 10px;
+
+						}
+
+						.label_checkbox{
+							font: 10px/20px 'Lato-Regular';
+
+
+						}
+					}
+
+					.form__bottom_send-btn{
+
+							
+					}
+				}
+			}
+			.container-contact {
+
+				
+
+				.container-contact__address{
+					font: 13px/18px 'Lato-Regular';
+
+						
+				}
+				.container-contact__phone{
+					font: 13px/18px 'Lato-Regular';
+
+
+				}
+				.container-contact__email{
+					font: 13px/18px 'Lato-Regular';
+
+
+				}
+			}			
+		}	
+		
+
+
+	.footer-section__copyright{
+
+
+		.footer-section__copyright_text{
+			font: 13px/18px 'Lato-Regular';
+
+
+		}
+
+		.footer-section__copyright_social{
+
+
+
+			.footer-section__copyright_social_link{
+
+
+			}
+
+			.ft-link-1{
+				
+
+			}
+			.ft-link-2{
+				
+
+			}
+			.ft-link-3{
+				
+
+			}
+			.ft-link-4{
+				
+
+			}
+		}
+	}
+}
+}
+
+
+
+/* 
+.header-section{
+	padding: 0 50px;
+
+
+	.header-section__logo{
+
+
+		.header-section__logo_link{
+
+
+			.logo_color{
+
+			}
+		}
+	}
+
+	.header-section__nav{
+
+
+		.header-section__nav_menu{
+			display: none;
+			position: absolute;
+			flex-direction: column;
+			top: 70px;
+			right: 100px;
+			background: rgba(0, 0, 0, .5);
+			border-top: 2px solid $yellow;
+			width: 200px;
+
+
+			.pos-rel-submenu{
+
+			}
+
+			.header-section__nav_menu_item{
+
+
+				
+			
+				.header-section__nav_menu_item_link{
+
+
+				}
+
+
+				.submenu{
+
+
+
+
+
+					.submenu__item{
+						
+
+
+						.submenu__item_link{
+
+
+
+
+							&:hover{
+
+
+								.toggle_arrow{
+
+								}
+							}
+						}
+						.toggle_arrow{
+
+						}
+
+						.sub-submenu{
+
+
+							.sub-submenu__item{
+								
+
+								.sub-submenu__item_link{
+
+
+									&:hover{
+;
+
+										.toggle_arrow{
+
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		.header-section__form{
+
+
+			.header-section__form_search{
+
+
+			}
+		}
+	}
+
+	.header-section__burger-btn{
+		display: block;
+		transform: rotateZ(90deg);
+		font-weight: bold;
+
+	}
+}
+
+
+ .banner{
+
+
+	
+
+	&:after{
+
+}
+	.banner__slider_wrapper{
+
+
+	}
+	.banner__slider{
+
+
+	}
+.banner__width{
+
+			
+		}
+
+	.banner__content{
+
+
+
+
+		.banner__content_title{
+
+
+			.banner_color{
+
+			}
+		}
+
+		.banner__content_text{
+
+		}
+	}
+} 
+
+
+.choose-us{
+
+
+	.choose-us__top{
+
+
+		.choose-us__top_title{
+
+
+			.choose_color{
+
+			}
+		}
+		.choose-us__top_text{
+
+		}
+
+	}
+
+
+	.choose-us__content{
+
+
+		.choose-us__content_item{
+
+
+				.choose-img-1{
+
+				}
+				.choose-img-2{
+
+				}
+				.choose-img-3{
+
+				}
+				.choose-img-4{
+
+				}
+				.choose-img-5{
+
+				}
+
+
+			.choose-us__content_item_img{
+
+
+
+
+
+			}
+
+			.choose-us__content_item_title{
+
+			}
+
+			.choose-us__content_item_text{
+
+			}
+
+			.choose-us__hover{
+
+
+			
+
+				.choose-us__hover_title{
+
+				}
+
+				.choose-us__hover_wrap{
+
+
+					.choose-us__hover_wrap_item{
+
+
+
+						
+
+					}
+
+					.hover-img-1{
+
+
+						&:hover{
+
+
+						}
+					}
+					.hover-img-2{
+
+
+						&:hover{
+
+							
+						}
+					}
+				}
+			}
+		}
+
+	}
+
+}
+
+
+.product{
+
+
+
+	.product__top{
+
+	
+	
+	
+		.product__top_title{
+
+	
+	
+		}
+	
+		.product_color{
+;
+		}
+	}
+
+
+	.product__container{
+
+
+		.product__container_content{
+
+
+
+			.product__container_content_item{
+
+
+					
+				.product__container-img{
+
+
+
+
+
+					.product__container-img_wrap{
+
+
+						.product__container-img_wrap_img{
+
+
+						}
+					}
+				}
+				
+				.product__wrap-title{
+
+
+					.product__wrap-title_title{
+
+
+					}
+
+					.product__wrap-title_subtitle{
+
+
+					}
+					
+					.product__wrap-title_text{
+
+
+
+					}
+				}
+			}
+		}
+	}
+}
+
+
+
+
+
+
+.about{
+
+
+
+	.about__skills{
+
+
+
+		
+		.about__skills_title{
+
+			
+			.about_color{
+
+			}
+		}
+		
+		.about__skills_subtitle{
+
+		}
+
+		.about__skills_text{
+
+		}
+
+		.container-skills{
+
+
+			.container-skills__title{
+
+
+				.container-skills__title_name{
+
+
+				}
+
+				.container-skills__title_percent{
+
+
+				}
+
+			}
+
+			.container-skills__level{
+
+
+				.container-skills__level_line{
+
+
+				// .photoshop__skill{
+					// width: 79%;
+				// }
+				// .html-css__skill{
+					// width: 90%;
+				// }
+				// .javascript__skill{
+					// width: 69%;
+				// }
+				// .wordpress__skill{
+					// width: 92%;
+				// }
+			}
+		}
+	}
+
+	.about__bg-img{
+
+	}
+}
+
+
+.footer-section{
+
+	
+
+	.footer-section__top{
+
+
+		.footer-section__top_title{
+
+
+			.footer-section_color{
+
+			}
+		}
+
+		.footer-section__top_text{
+
+		}
+	}
+
+
+	.footer-section__contact{
+	
+
+
+	}
+	.footer-section__container{
+
+
+
+			.form{
+
+			
+
+				.form__wrap{
+
+
+					.form__wrap_full-name{
+
+					}
+
+					.form__wrap_email{
+
+					}
+				}
+
+				.form__wrap_message{
+
+
+				}
+
+				.form__bottom{
+
+
+
+					.form__bottom_label{
+
+
+						
+						.form__bottom_label_checkbox{
+
+						}
+
+						.label_checkbox{
+
+
+						}
+					}
+
+					.form__bottom_send-btn{
+
+							
+					}
+				}
+			}
+			.container-contact {
+
+				
+
+				.container-contact__address{
+
+						
+				}
+				.container-contact__phone{
+
+
+				}
+				.container-contact__email{
+
+
+				}
+			}			
+		}	
+		
+
+
+	.footer-section__copyright{
+
+
+		.footer-section__copyright_text{
+
+
+		}
+
+		.footer-section__copyright_social{
+
+
+
+			.footer-section__copyright_social_link{
+
+
+			}
+
+			.ft-link-1{
+				
+
+			}
+			.ft-link-2{
+				
+
+			}
+			.ft-link-3{
+				
+
+			}
+			.ft-link-4{
+				
+
+			}
+		}
+	}
+}
+ */	
+
+
