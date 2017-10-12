@@ -86,7 +86,7 @@
 
         //hover 'why choose us'
 
-        $('.choose-us__content_item').hover(
+        $('.choose-us__content--item').hover(
             function() {
                 $(this).find('.choose-us__hover').slideDown();
             },
@@ -98,7 +98,7 @@
 
     //Menu hidden        
     $('.header-section__burger-btn').on('click', function() {
-        $('.header-section .header-section__nav .header-section__nav_menu').toggleClass('active-menu');
+        $('.header-section .header-section__nav .header-section__nav--menu').toggleClass('active-menu');
     })
 
 
@@ -138,7 +138,7 @@
 })(window, document);
 $(document).ready(function(){
 
-    $('.banner__slider_wrapper').bxSlider({
+    $('.banner__wrapper').bxSlider({
         auto: true,
         autoControls: true,
         pause: 2000,
