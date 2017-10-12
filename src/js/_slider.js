@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-    $('.banner__slider_wrapper').bxSlider({
+    $('.banner__wrapper').bxSlider({
         auto: true,
         autoControls: true,
         pause: 2000,

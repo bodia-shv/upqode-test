@@ -1,9 +1,9 @@
-.banner__slider_controls {
+.banner__slider--controls {
   position: absolute;
   width: 100%;
 }
 
-.banner__slider_controls span {
+.banner__slider--controls span {
   margin-top: 0px;
   opacity: 0.5;
   position: relative;
@@ -15,16 +15,16 @@
   transition: opacity 0.3s linear;
 }
 
-.banner__slider_controls span:hover {
+.banner__slider--controls span:hover {
   opacity: 1.0;
 }
 
-.banner__slider_controls .slider-prev {
+.banner__slider--controls .slider-prev {
   float: left;
   margin-left: 15px;
 }
 
-.banner__slider_controls .slider-next {
+.banner__slider--controls .slider-next {
   float: right;
   margin-right: 15px;
 }

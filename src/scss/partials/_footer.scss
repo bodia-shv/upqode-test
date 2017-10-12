@@ -10,7 +10,7 @@
 	align-items: center;
 	
 
-	.footer-section__top{
+	&__top{
 		display: flex;
 		width: 100%;
 		padding: 200px 230px 65px;
@@ -18,7 +18,7 @@
 		flex-direction: column;
 		align-items: center;
 
-		.footer-section__top_title{
+		&--title{
 			font: 35px/20px 'Lato-Bold';
 			color: $darkgray;
 			margin-bottom: 25px;
@@ -28,7 +28,7 @@
 			}
 		}
 
-		.footer-section__top_text{
+		&--text{
 			font: 14px/24px 'Lato-Regular';
 			color: $gray;
 			width: 660px;
@@ -36,7 +36,7 @@
 	}
 
 
-	.footer-section__contact{
+	&__contact{
 		display: flex;
 		width: 100%;
 		height: 635px;
@@ -46,7 +46,7 @@
 
 
 	}
-	.footer-section__container{
+	&__container{
 			width: 946px;
 			display: flex;
 			padding: 80px 0;
@@ -67,12 +67,12 @@
 				justify-content: space-between;
 			
 
-				.form__wrap{
+				&__wrap{
 					display: flex;
 					justify-content: space-between;
 					width: 100%;
 
-					.form__wrap_full-name{
+					&--full-name{
 						text-indent: 10px;
 						width: 50%;
 						height: 50px;
@@ -84,7 +84,7 @@
 						outline: none;
 					}
 
-					.form__wrap_email{
+					&--email{
 						text-indent: 10px;
 						width: 50%;
 						height: 50px;
@@ -96,7 +96,7 @@
 					}
 				}
 
-				.form__wrap_message{
+				&__message{
 					text-indent: 10px;
 					resize: none;
 					width: 100%;
@@ -109,18 +109,18 @@
 
 				}
 
-				.form__bottom{
+				&__bottom{
 					display: flex;
 					justify-content: space-between;
 					width: 100%;
 
 
-					.form__bottom_label{
+					&--label{
 						display: flex;
 						align-items: center;
 
 						
-						.form__bottom_label_checkbox{
+						&--label_checkbox{
 							width: 20px;
 							height: 20px;
 							border: 1px solid $gray;
@@ -136,7 +136,7 @@
 						}
 					}
 
-					.form__bottom_send-btn{
+					&--send-btn{
 						padding: 5px 40px;
 						background: $yellow;
 						font: 16px/24px 'Lato-Regular';
@@ -153,27 +153,18 @@
 				flex-direction: column;
 				
 
-				.container-contact__address{
+				&__item{
 					font: 16px/24px 'Lato-Regular';
 					color: #f3f3f3;
-						
+					text-indent: 0;
 				}
-				.container-contact__phone{
-					font: 16px/24px 'Lato-Regular';
-					color: #f3f3f3;
-
-				}
-				.container-contact__email{
-					font: 16px/24px 'Lato-Regular';
-					color: #f3f3f3;
-
-				}
+				
 			}			
 		}	
 		
 
 
-	.footer-section__copyright{
+	&__copyright{
 	display: flex;
 	width: 100%;
 	height: 60px;
@@ -183,20 +174,20 @@
 	box-sizing: border-box;
 	padding: 0 30px;
 
-		.footer-section__copyright_text{
+		&--text{
 			font: 16px/42px 'Lato-Regular';
 			color: #7a7a7a;
 			margin: 0;
 
 		}
 
-		.footer-section__copyright_social{
+		&--social{
 			display: flex;
 			width: 200px;
 			justify-content: space-between;
 
 
-			.footer-section__copyright_social_link{
+			&_link{
 				display: flex;
 				align-self: center;
 				background-position: center;

@@ -28,10 +28,11 @@ body{
  .banner{
 	display: flex;
 	width: 100%;
-	height: 860px;
+	height: 100vh;
 	box-sizing: border-box;
 	justify-content: center;
 	position: relative;
+	top: 0;
 	align-items: center;
 
 	
@@ -40,16 +41,16 @@ body{
      	content: '';
      	position: absolute;
      	width: 100%;
-     	height: 100%;
+     	height: 100vh;
      	top: 0;
      	right: 0;
      	bottom: 0;
      	left: 0;
      	background-image: linear-gradient(to right, rgba(0, 157, 218, .9), rgba(80, 51, 146, .9));
-}
-	.banner__slider_wrapper{
+	}
+	&__wrapper{
 		width: 100%;
-		height: 100%;
+		height: 100vh;
 		position: absolute;
 		margin: 0;
 		padding: 0;
@@ -58,33 +59,27 @@ body{
 		bottom: 0;
 		left: 0;
 
-	}
-	.banner__slider{
-		position: absolute;
-		min-width: 100vh;
-		min-height: 95vh;
-		margin: 0;
-		padding: 0;
-		top: 0;
-		right: 0;
-		bottom: 0;
-		left: 0;
-		background-size: cover;
-		background-position: center;
+		&--slider{
+			position: absolute;
+			min-width: 100vh;
+			min-height: 100vh;
+			margin: 0;
+			padding: 0;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			background: url('../img/slider-bg.jpg') no-repeat;
+			background-size: cover;
+			background-position: center;
 
-	}
-.banner__width{
-		width: 1600px;
-		height: 860px;
-		position: absolute;
-		top: 0;
-		right: 0;
-		bottom: 0;
-		left: 0;
-			
 		}
 
-	.banner__content{
+	}
+
+
+
+	&__content{
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -94,7 +89,7 @@ body{
 
 
 
-		.banner__content_title{
+		&--title{
 			font: 64px 'Lato-Bold';
 			color: $yellow;
 			margin: 0 0 20px 0;
@@ -104,7 +99,7 @@ body{
 			}
 		}
 
-		.banner__content_text{
+		&--text{
 			width: 720px;
 			text-align: center;
 			letter-spacing: 1.4px;
@@ -121,25 +116,26 @@ body{
 	display: flex;
 	width: 100%;
 	min-height: 690px;
-	padding: 120px 230px;
+	padding: 100px 230px;
 	box-sizing: border-box;
 	justify-content: space-between;
 	flex-direction: column;
 
-	.choose-us__top{
+	&__top{
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 
-		.choose-us__top_title{
+		&--title{
 		font: 35px/24px 'Lato-Bold';
 		color: $blue;
+		margin-bottom: 20px;
 
 			.choose_color{
 				color: $darkgray;
 			}
 		}
-		.choose-us__top_text{
+		&--text{
 		width: 660px;
 		font: 14px/24px 'Lato-Regular';
 		color: $gray;
@@ -149,11 +145,11 @@ body{
 	}
 
 
-	.choose-us__content{
+	&__content{
 		display: flex;
 		justify-content: space-between;
 
-		.choose-us__content_item{
+		&--item{
 			width: 200px;
 			min-height: 270px;
 			display: flex;
@@ -187,7 +183,7 @@ body{
 				}
 
 
-			.choose-us__content_item_img{
+			&_img{
 				width: 65px;
 				height: 55px;
 				display: flex;
@@ -198,13 +194,13 @@ body{
 
 			}
 
-			.choose-us__content_item_title{
+			&_title{
 				font: 16px/50px 'Lato-Heavy';
 				color: $darkgray;
 				margin: 30px 0 0 ;
 			}
 
-			.choose-us__content_item_text{
+			&_text{
 				font: 14px/20px 'Lato-Light';
 				color: #373737;
 				margin: 0 ;
@@ -224,21 +220,21 @@ body{
 
 			
 
-				.choose-us__hover_title{
+				&--title{
 					font: 14px/80px 'Lato-Semibold';
 					color: #fff;
 					width: 100%;
 					margin: 0px;
 				}
 
-				.choose-us__hover_wrap{
+				&--wrap{
 					display: flex;
 					width: 85px;
 					padding:  0 0 35px;
 					margin: 0 auto;
 					justify-content: space-between;
 
-					.choose-us__hover_wrap_item{
+					&_item{
 						width: 35px;
 						height: 35px;
 						border: 1px solid #fff;
@@ -287,7 +283,7 @@ body{
 	flex-direction: column;
 
 
-	.product__top{
+	&__top{
 		display: flex;
 		width: 100%;
 		min-height: 120px;
@@ -301,28 +297,28 @@ body{
 	
 	
 	
-		.product__top_title{
+		&--title{
 			font: 35px/24px 'Lato-Bold';
 			color: #fff;
 			padding: 20px 0;
 			margin: 0;
 	
-	
+			.product_color{
+				color: $yellow;
+			}
 		}
 	
-		.product_color{
-			color: $yellow;
-		}
+		
 	}
 
 
-	.product__container{
+	&__container{
 	display: flex;
 	min-height: 720px;
 	padding: 0 230px;
 	background: #989898;
 
-		.product__container_content{
+		&--content{
 			display: flex;
 			justify-content: center;
 			/*align-content: center;*/
@@ -331,7 +327,7 @@ body{
 			flex-wrap: wrap;
 
 
-			.product__container_content_item{
+			&_item{
 				/*padding: 40px 0;*/
 				display: flex;
 				width: 33.33%;
@@ -346,38 +342,38 @@ body{
 
 
 
-					.product__container-img_wrap{
+					&--wrap{
 						width: 150px;
 						height: 150px;
 						border-radius: 50%;
 						background: #898;
 
-						.product__container-img_wrap_img{
+						&_img{
 
 
 						}
 					}
 				}
 				
-				.product__wrap-title{
+				.product-wrap-title{
 					display: flex;
 					flex-direction: column;
 					justify-content: center;
 					padding-left: 20px;
 
-					.product__wrap-title_title{
+					&__title{
 						font: 24px/96.96px 'Lato-Heavy';
 						color: $darkgray;
 
 					}
 
-					.product__wrap-title_subtitle{
+					&__subtitle{
 						font: 16px/24.21px 'Lato-Regular';
 						color: $purple;
 
 					}
 					
-					.product__wrap-title_text{
+					&__text{
 						font: 14px/24.21px 'Lato-Light';
 						color: #373737;
 
@@ -401,7 +397,7 @@ body{
 	justify-content: center;
 
 
-	.about__skills{
+	&__skills{
 		width: 50%;
 		display: flex;
 		padding-right: 20px;
@@ -409,7 +405,7 @@ body{
 
 
 		
-		.about__skills_title{
+		&--title{
 			font: 35px/24px 'Lato-Bold';
 			color: $darkgray;
 			margin-bottom: 30px;
@@ -419,14 +415,14 @@ body{
 			}
 		}
 		
-		.about__skills_subtitle{
+		&--subtitle{
 			font: 14px/24px 'Lato-Regular';
 			color: $gray;
 			margin-bottom: 50px;
 			letter-spacing: 1px;
 		}
 
-		.about__skills_text{
+		&--text{
 			font: 14px/24px 'Lato-Regular';
 			color: #373737;
 			letter-spacing: 0.9px;
@@ -438,17 +434,17 @@ body{
 			width: 100%;
 			flex-direction: column;
 
-			.container-skills__title{
+			&__title{
 				display: flex;
 				justify-content: space-between;
 
-				.container-skills__title_name{
+				&--name{
 					font: 13px/70px 'Lato-Bold';
 					color: #444;
 
 				}
 
-				.container-skills__title_percent{
+				&--percent{
 					font: 13px/70px 'Lato-Bold';
 					color: #444;
 
@@ -456,13 +452,13 @@ body{
 
 			}
 
-			.container-skills__level{
+			&__level{
 				display: flex;
 				width: 100%;
 				padding: 3px;
 				border: 1px solid $lightgray;
 
-				.container-skills__level_line{
+				&--line{
 					height: 3px;
 					width: 0;
 					background-color: $blue; 
@@ -486,7 +482,7 @@ body{
 		}
 	}
 
-	.about__bg-img{
+	&__bg-img{
 		width: 50%;
 		display: flex;
 		background: url('../img/ipad-about.png') no-repeat;

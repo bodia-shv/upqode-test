@@ -15,10 +15,10 @@
 	right: 0;
 	z-index: 10000;
 
-	.header-section__logo{
+	&__logo{
 
 
-		.header-section__logo_link{
+		&--link{
 			font: 30px/20px 'Beyno';
 			color: $blue;
 
@@ -28,13 +28,13 @@
 		}
 	}
 
-	.header-section__nav{
+	&__nav{
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
 		align-content: center;
 
-		.header-section__nav_menu{
+		&--menu{
 			width: 100%;
 			display: flex;
 			margin: 0px;
@@ -45,15 +45,14 @@
 				position: relative;
 			}
 
-			.header-section__nav_menu_item{
+			&_item{
 				margin: 0  0 0 60px;
 				height: 70px;
 				display: flex;
 				align-items: center;
-
 				
 			
-				.header-section__nav_menu_item_link{
+				&-link{
 					font: 16px/24px 'Lato-Regular';
 					letter-spacing: 1px;
 					color: $darkgray;
@@ -75,11 +74,11 @@
 
 
 
-					.submenu__item{
+					&__item{
 						
 
 
-						.submenu__item_link{
+						&--link{
 							font: 14px/36px 'Lato-Light';
 							color: #fdfdfd;
 
@@ -110,10 +109,10 @@
 							right: -180px;
 							top: 85px;
 
-							.sub-submenu__item{
+							&__item{
 								
 
-								.sub-submenu__item_link{
+								&--link{
 									font: 14px/36px 'Lato-Light';
 									color: #fdfdfd;
 
@@ -132,12 +131,13 @@
 				}
 			}
 		}
-		.header-section__form{
+
+		&--form{
 			display: flex;
 			align-self: center;
 			margin: 0 0 0 45px;
 
-			.header-section__form_search{
+			&_search{
 				width: 180px;
 				height: 30px;
 				box-sizing: border-box;
@@ -152,7 +152,7 @@
 		}
 	}
 
-	.header-section__burger-btn{
+	&__burger-btn{
 		display: none;
 	}
 }
